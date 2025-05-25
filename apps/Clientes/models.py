@@ -9,7 +9,7 @@ class Cliente(models.Model):
     correo=models.EmailField(max_length=254) 
     avatar=models.URLField(null=True)
     class Meta:
-        db_table="Clientes"
+        db_table="clientes"
         verbose_name="Cliente"
         verbose_name_plural="Clientes"
     def __str__(self):
