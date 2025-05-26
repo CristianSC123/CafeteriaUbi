@@ -1,8 +1,8 @@
 from django.db import models
 import uuid
 from django.utils.timezone import now
-from Clientes.models import Cliente
-from Productos.models import Producto
+from apps.Clientes.models import Cliente
+from apps.Productos.models import Producto
 
 class Ventas(models.Model):
     id_venta=models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)

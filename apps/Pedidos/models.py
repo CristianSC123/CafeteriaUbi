@@ -1,7 +1,7 @@
 from django.db import models
 import uuid
-from Clientes.models import Cliente
-from Productos.models import Producto
+from apps.Clientes.models import Cliente
+from apps.Productos.models import Producto
 
 # Create your models here.
 class Pedido(models.Model):

@@ -1,14 +1,8 @@
 from django.contrib import admin
 from .models import Ventas,DetalleVenta
 
-class DetalleVentaTabular(admin.TabularInline):  
-    extra = 1
-
-@admin.register(Ventas)
-class VentasAdmin(admin.ModelAdmin):
-    list_display = ("fecha_venta", "total", "cliente")
-    inlines = [DetalleVentaTabular]  
-
+admin.site.register(Ventas)
+admin.site.register(DetalleVenta)
     
 
 # Register your models here.
